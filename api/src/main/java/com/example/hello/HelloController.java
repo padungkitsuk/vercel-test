@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/hello")
-    public Map<String, Object> hello(@RequestParam(defaultValue = "World") String name) {
+    public Map<String, Object> hello(@RequestParam(defaultValue = "World-test") String name) {
         return Map.of(
                 "message", "Hello, " + name + "!",
                 "from", "Spring Boot",
